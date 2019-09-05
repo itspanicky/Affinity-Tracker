@@ -1,0 +1,22 @@
+body {
+    /* width: 300px;
+    margin: 40px auto; */
+    padding: 15px 30px;
+    width: 200px;
+    /* border: 2px solid black; */
+    /* border-radius: 12px; */
+}
+
+body > h1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid black;
+}
+
+body > div {
+    font-size: 18px;
+    padding: 5px 30px;
+    display: flex;
+    justify-content: flex-start;
+    color: darkslategray;
+}

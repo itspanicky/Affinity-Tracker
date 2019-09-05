@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "Affinity Tracker",
+    "description": "Tracks user affinity",
+    "version": "0.8",
+
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.urbanoutfitters.com/*"
+            ],
+            "js": [
+                "js/content.js"
+            ]
+        }
+    ],
+
+    "browser_action": {
+        "default_icon": "affinity-tracker.png",
+        "default_popup": "popup.html",
+        "default_title": "Affinity Tracker"
+    },
+
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+
+    "permissions": [
+        "storage",
+        "tabs"
+    ]
+
+}
